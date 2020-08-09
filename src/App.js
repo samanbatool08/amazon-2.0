@@ -6,7 +6,20 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <h1>Lets build and amazon clone</h1>
+        <Switch>
+          <Route path='/checkout'>
+            <h1>Checkouut</h1>
+          </Route>
+          
+          <Route path='/login'>
+            <h1>Login page</h1>
+          </Route>
+
+          <Route path='/'>
+            <h1>Homepage</h1>
+          </Route>
+
+        </Switch>
       </div>
     </Router>
   );
