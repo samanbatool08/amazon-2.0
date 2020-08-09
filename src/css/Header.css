@@ -1,0 +1,17 @@
+.header {
+    background-color: #131921
+}
+
+.header__logo {
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* condensed v:
+    margin: 0 20px; */
+    margin-top: 18px;
+}
+
+
+
+/* colors */
+/* amazon blue: #131921 */
