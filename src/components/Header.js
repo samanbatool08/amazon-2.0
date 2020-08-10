@@ -20,7 +20,7 @@ function Header() {
                 <input type='text' className='header__searchInput' />
                 <SearchIcon className='header__searchIcon' />            
             </div>
-            
+
             {/* 3 links - sign in/sign out, returns, prime account deets */}
             <div className='header__nav'>
             {/* 1st link */}
@@ -31,7 +31,7 @@ function Header() {
                 </div>
             </Link>
 
-            {/* 2nd link */}
+          {/* 2nd link */}
             <Link to='/' className='header__link'>
                 <div className='header__option'>
                     <span className='header__optionLineOne'>Returns</span>
