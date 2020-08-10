@@ -15,10 +15,38 @@ function Header() {
                 />
             </Link>
             {/* search box  */}
-            <input type='text' className='header__searchInput' />
-            <SearchIcon className='header__searchIcon' />            
+            <div className='header__search'>
+                <input type='text' className='header__searchInput' />
+                <SearchIcon className='header__searchIcon' />            
+            </div>
             {/* 3 links - sign in/sign out, returns, prime account deets */}
+            <div className='header__nav'>
+            {/* 1st link */}
+            <Link to='/login' className='header__link'>
+                <div className='header__option'>
+                    <span>Hello Saman</span>
+                    <span>Sign In</span>
+                </div>
+            </Link>
+            {/* 2nd link */}
+            <Link to='/login' className='header__link'>
+                <div className='header__option'>
+                    <span>Hello Saman</span>
+                    <span>Sign In</span>
+                </div>
+            </Link>
+
+            {/* 3rd link */}
+            <Link to='/login' className='header__link'>
+                <div className='header__option'>
+                    <span>Hello Saman</span>
+                    <span>Sign In</span>
+                </div>
+            </Link>
+
+
             {/* basket - cart link */}
+            </div>
         </nav>
     )
 }
