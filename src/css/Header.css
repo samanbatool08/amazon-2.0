@@ -2,6 +2,11 @@
     background-color: #131921;
     display: flex;
     align-items: center;
+    /* keep navbar STUCK to top as user scrolls */
+    position: sticky;
+    top: 0;
+    /* want to show nothing above this - control vertical stacking*/
+    z-index: 100;
 }
 
 .header__logo {
@@ -51,6 +56,7 @@
     margin-right: 10px;
 }
 
+
 .header__optionLineOne {
     font-size: 10px;
 }
@@ -59,6 +65,18 @@
     font-size: 13px;
     font-weight: 800;
 }
+
+.header__optionBasket {
+    display: flex;
+    align-items: center;
+}
+
+.header__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
 
 /* colors */
 /* amazon blue: #131921 */
