@@ -3,8 +3,12 @@ import '../css/Header.css';
 import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import { useStateValue } from './StateProvider';
 
 function Header() {
+    const [{ basket }, dispatch ] = useStateValue();
+
+
     return (
         <nav className='header'>
             {/* amazon logo on the left (img tag) */}
@@ -16,7 +20,7 @@ function Header() {
                 />
             </Link>
             {/* search box  */}
-            <div className='header__search'>
+            <div className='header__search'>  
                 <input type='text' className='header__searchInput' />
                 <SearchIcon className='header__searchIcon' />            
             </div>
@@ -53,7 +57,7 @@ function Header() {
                     {/* Shopping Basket Icon */}
                     <ShoppingBasketIcon />
                     {/* # of items in basket */}
-                    <span className='header__optionLineTwo header__basketCount'>0</span>
+    <span className='header__optionLineTwo header__basketCount'>{basket?.length}</span>
                 </div>
             </Link>
             </div>
