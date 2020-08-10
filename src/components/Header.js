@@ -24,28 +24,28 @@ function Header() {
             {/* 1st link */}
             <Link to='/login' className='header__link'>
                 <div className='header__option'>
-                    <span>Hello Saman</span>
-                    <span>Sign In</span>
+                    <span className='header__optionLineOne'>Hello Saman</span>
+                    <span className='header__optionLineTwo'>Sign In</span>
                 </div>
             </Link>
             {/* 2nd link */}
-            <Link to='/login' className='header__link'>
+            <Link to='/' className='header__link'>
                 <div className='header__option'>
-                    <span>Hello Saman</span>
-                    <span>Sign In</span>
+                    <span className='header__optionLineOne'>Returns</span>
+                    <span className='header__optionLineTwo'>Orders</span>
                 </div>
             </Link>
 
             {/* 3rd link */}
-            <Link to='/login' className='header__link'>
+            <Link to='/' className='header__link'>
                 <div className='header__option'>
-                    <span>Hello Saman</span>
-                    <span>Sign In</span>
+                    <span className='header__optionLineOne'>Your</span>
+                    <span className='header__optionLineTwo'>Prime</span>
                 </div>
             </Link>
 
-
             {/* basket - cart link */}
+            
             </div>
         </nav>
     )
