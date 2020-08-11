@@ -9,7 +9,7 @@ const reducer = (state, action) => {
             // Logic for adding item to basket
         return {
             ...state,
-            basket: 
+            basket: [...state.basket, action.item]
             };
         case 'REMOVE_FROM_BASKET':
             // login for removing items from basket
