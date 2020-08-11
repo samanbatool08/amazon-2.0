@@ -12,11 +12,20 @@ function login(e) {
     e.preventDefault();
     //..login logic
     auth.signInWithEmailAndPassword(email,password)
+    .then((auth) => {
+        // user is logged in; redirect to homepage
+    })
+    .catch(e => alert(e.message))
 }
 
 function register(e) {
     e.preventDefault();
     //..register logic
+    auth.createUserWithEmailAndPassword(email, password)
+    .then((auth) => {
+        // user is created and logged in
+    })
+    .catch(e => alert(e.message))
 }
 
     return (
@@ -33,9 +42,15 @@ function register(e) {
                 <h1>Sign In</h1>
                 <form>
                     <h5>E-mail</h5>
-                    <input value={email} type='email' />
+                    <input 
+                        value={email} 
+                        onChange={e => setEmail(e.target.value)}
+                        type='email' />
                     <h5>Password</h5>
-                    <input value={password} type='password' />
+                    <input 
+                        value={password}
+                        onChange={e => setPassword(e.target.value)} 
+                        type='password' />
                     <button 
                         onClick={login}
                         type='submit'
