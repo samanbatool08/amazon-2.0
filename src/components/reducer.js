@@ -1,11 +1,5 @@
 export const initialState = {
-    basket: [{
-        id:'23453241',
-        title: 'Echo Dot (3rd Gen) - Smart speaker with Alexa - Charcoal',
-        price: 49.99,
-        rating:4,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/61qDKbBlcgL._AC_SL1000_.jpg'
-    }],
+    basket: [],
     user: null
 };
 
@@ -17,6 +11,11 @@ export const getBasketTotal = (basket) =>
 const reducer = (state, action) => {
     console.log(action);
     switch(action.type) {
+        case 'SET_USER':
+            return {
+                ...state, 
+                user: action.user
+            }
         case 'ADD_TO_BASKET':
         return {
             ...state,
