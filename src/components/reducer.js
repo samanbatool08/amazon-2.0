@@ -7,7 +7,10 @@ const reducer = (state, action) => {
     switch(action.type) {
         case 'ADD_TO_BASKET':
             // Logic for adding item to basket
-        return {state};
+        return {
+            ...state,
+            basket: 
+            };
         case 'REMOVE_FROM_BASKET':
             // login for removing items from basket
         return {state};
