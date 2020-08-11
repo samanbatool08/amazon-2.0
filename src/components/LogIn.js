@@ -28,6 +28,7 @@ function register(e) {
     auth.createUserWithEmailAndPassword(email, password)
     .then((auth) => {
         // user is created and logged in
+        history.push('/')
     })
     .catch(e => alert(e.message))
 }
