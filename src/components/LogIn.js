@@ -3,6 +3,17 @@ import '../css/LogIn.css';
 import { Link } from 'react-router-dom';
 
 function LogIn() {
+
+function login(e) {
+    e.preventDefault();
+    //..login logic
+}
+
+function register(e) {
+    e.preventDefault();
+    //..register logic
+}
+
     return (
         <div className='login'>
             <Link to ='/'>
@@ -17,16 +28,25 @@ function LogIn() {
                 <h1>Sign In</h1>
                 <form>
                     <h5>E-mail</h5>
-                    <input type='text' />
+                    <input type='email' />
                     <h5>Password</h5>
-                    <input type='text' />
-                    <button className='login__signInButton'>Sign In</button>
+                    <input type='password' />
+                    <button 
+                        onClick={login}
+                        type='submit'
+                        className='login__signInButton'>
+                            Sign In
+                    </button>
                 </form>
 
                 <p>
                     By siging-in you agree to Amazon's Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our interest-based Ads Notice.
                 </p>
-                <button className='login__registerButton'>Create your Amazon Account</button>
+                <button 
+                    onClick={register}
+                    className='login__registerButton'>
+                        Create your Amazon Account
+                </button>
             </div>
         </div>
     )
