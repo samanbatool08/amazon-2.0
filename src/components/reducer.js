@@ -19,8 +19,18 @@ const reducer = (state, action) => {
             basket: [...state.basket, action.item]
             };
         case 'REMOVE_FROM_BASKET':
-            // login for removing items from basket
-        return {state};
+            // logic for removing items from basket
+            let newBasket = [...state.basket]
+            const index = state.basket.findIndex((basketItem) => basketItem.id === action.id)
+            
+            if ( index >= 0) {
+
+            }
+            else {
+                console.warn(
+                    
+                )
+        return {...state};
         default:
             return state;
     }
