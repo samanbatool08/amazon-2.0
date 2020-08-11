@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/LogIn.css';
 import { Link } from 'react-router-dom';
+import { auth } from 'firebase';
+
 
 function LogIn() {
+    const[email, setEmail] = useState('');
+    const[password, setPassword] = useState('');
 
 function login(e) {
     e.preventDefault();
     //..login logic
+    auth.signInWithEmailAndPassword(email,password)
 }
 
 function register(e) {
@@ -28,9 +33,9 @@ function register(e) {
                 <h1>Sign In</h1>
                 <form>
                     <h5>E-mail</h5>
-                    <input type='email' />
+                    <input value={email} type='email' />
                     <h5>Password</h5>
-                    <input type='password' />
+                    <input value={password} type='password' />
                     <button 
                         onClick={login}
                         type='submit'
