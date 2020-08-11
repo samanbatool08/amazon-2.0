@@ -20,13 +20,13 @@ function LogIn() {
                     <input type='text' />
                     <h5>Password</h5>
                     <input type='text' />
-                    <button>Sign In</button>
+                    <button className='login__signInButton'>Sign In</button>
                 </form>
 
                 <p>
                     By siging-in you agree to Amazon's Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our interest-based Ads Notice.
                 </p>
-                <button>Create your Amazon Account</button>
+                <button className='login__registerButton'>Create your Amazon Account</button>
             </div>
         </div>
     )
