@@ -1,5 +1,12 @@
 export const initialState = {
-    basket: []
+    basket: [{
+        id:'23453241',
+        title: 'Echo Dot (3rd Gen) - Smart speaker with Alexa - Charcoal',
+        price: 49.99,
+        rating:4,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/61qDKbBlcgL._AC_SL1000_.jpg'
+    }],
+    user: null
 };
 
 const reducer = (state, action) => {
