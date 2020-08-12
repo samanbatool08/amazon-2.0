@@ -2,7 +2,6 @@
 
 ###### Full homepage and shopping cart Amazon application using React Context API for prop delivery and Firebase for User Authentication and hosting/deployment.  
 
-###### You can find the Rails API backend for this app here: https://github.com/samanbatool08/weather-ishouldgo-backend
 
 
 ###### Live hosted website: https://clone-1cbc8.web.app/
